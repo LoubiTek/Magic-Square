@@ -6,12 +6,12 @@ int NUM[] = {9,3,7,1};
 void GameBoard()
 {
     printf("\n");
-    printf("  3x3\n");
-    printf("-------\n");
-    printf("|4|?|2|\n");
-    printf("|?|5|?|\n");
-    printf("|8|?|6|\n");
-    printf("-------\n");
+    printf("                                                      3x3\n");
+    printf("                                                    -------\n");
+    printf("                                                    |4|?|2|\n");
+    printf("                                                    |?|5|?|\n");
+    printf("                                                    |8|?|6|\n");
+    printf("                                                    -------\n");
     printf("\n");
 }
 
@@ -21,11 +21,11 @@ void Test()
 
     if(NUM[0] == 9)
     {
-        printf("Very good\n");
+        printf("Very good !\n");
     }
     else
     {
-        printf("Incorrect, try again\n");
+        printf("Incorrect, try again...\n");
         GameBoard();
     }
 
@@ -35,11 +35,11 @@ void Test()
 
     if(NUM[1] == 3)
     {
-        printf("Very good\n");
+        printf("Very good !\n");
     }
     else
     {
-        printf("Incorrect, try again\n");
+        printf("Incorrect, try again...\n");
         GameBoard();
     }
 
@@ -49,11 +49,11 @@ void Test()
 
     if(NUM[2] == 7)
     {
-        printf("Very good\n");
+        printf("Very good !\n");
     }
     else
     {
-        printf("Incorrect, try again\n");
+        printf("Incorrect, try again...\n");
         GameBoard();
     }
 
@@ -63,24 +63,32 @@ void Test()
 
     if(NUM[3] == 1)
     {
-        printf("Very good\n");
+        printf("Very good !\n");
     }
     else
     {
-        printf("Incorrect, try again\n");
+        printf("Incorrect, try again...\n");
         GameBoard();
     }
 }
 
-int main()
+void Game()
 {
-    printf("WELCOME TO MY MAGIC SQUARE!\n");
-    printf("\n");
-    printf("Good Luck\n");
+    printf("                                            ------------------------------\n");
+    printf("                                            |WELCOME TO MY MAGIC SQUARE!|\n");
+    printf("                                            ------------------------------\n");
+    printf("                                            ----------------------\n");
+    printf("                                            |Good Luck & Have Fun| <3\n");
+    printf("                                            ----------------------\n");
     GameBoard();
-    printf("Complete and replace the ? by a value to make the result correspond to 15.\n");
+    printf("Complete and replace the <?> by a value to make the result correspond to 15.\n");
     printf("\n");
     printf("The number 1 is: ");
+}
+
+int main()
+{
+    Game();
     Test();
     return 0;
 }
