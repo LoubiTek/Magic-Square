@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int NUM[] = {9,3,7,1};
+
 void GameBoard()
 {
     printf("\n");
@@ -13,22 +15,11 @@ void GameBoard()
     printf("\n");
 }
 
-int main()
+void Test()
 {
-    int N1 = 0; // 9
-    int N2 = 0; // 3
-    int N3 = 0; // 7
-    int N4 = 0; // 1
+    scanf("%d",&NUM[0]);
 
-    printf("WELCOME TO MY MAGIC SQUARE!\n");
-    GameBoard();
-    printf("Complete and replace the ? by a value to make the result correspond to 15.\n");
-    printf("\n");
-    printf("The number 1 is: ");
-
-    scanf("%d",&N1);
-
-    if(N1 == 9)
+    if(NUM[0] == 9)
     {
         printf("Very good\n");
     }
@@ -40,9 +31,9 @@ int main()
 
     printf("The number 2 is: ");
 
-    scanf("%d",&N2);
+    scanf("%d",&NUM[1]);
 
-    if(N2 == 3)
+    if(NUM[1] == 3)
     {
         printf("Very good\n");
     }
@@ -54,9 +45,9 @@ int main()
 
     printf("The number 3 is: ");
 
-    scanf("%d",&N3);
+    scanf("%d",&NUM[2]);
 
-    if(N3 == 7)
+    if(NUM[2] == 7)
     {
         printf("Very good\n");
     }
@@ -68,9 +59,9 @@ int main()
 
     printf("The number 4 is: ");
 
-    scanf("%d",&N4);
+    scanf("%d",&NUM[3]);
 
-    if(N4 == 1)
+    if(NUM[3] == 1)
     {
         printf("Very good\n");
     }
@@ -79,5 +70,17 @@ int main()
         printf("Incorrect, try again\n");
         GameBoard();
     }
+}
+
+int main()
+{
+    printf("WELCOME TO MY MAGIC SQUARE!\n");
+    printf("\n");
+    printf("Good Luck\n");
+    GameBoard();
+    printf("Complete and replace the ? by a value to make the result correspond to 15.\n");
+    printf("\n");
+    printf("The number 1 is: ");
+    Test();
     return 0;
 }
